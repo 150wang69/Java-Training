@@ -12,7 +12,7 @@ public class Break{
 			}
 		}
 	//练习2
-	//实现登陆验证，有三次机会，如果用户名为“王洋”，密码“666”，则提示登陆成功。否则提示还有几次机会，请使用for+break完成。
+	//实现登陆验证，有三次机会，如果用户名为“www”，密码“666”，则提示登陆成功。否则提示还有几次机会，请使用for+break完成。
 	    	Scanner wy = new Scanner(System.in);
 		String name ="";
 		String passwd = "";
@@ -24,7 +24,7 @@ public class Break{
 	       		passwd = wy.next();
 			//比较输入的名字和密码是否正确。
 			//补充说明：字符串比较的方法：String类里有equal方法。
-	 		if ("王洋".equals(name) && "666".equals(passwd)){
+	 		if ("www".equals(name) && "666".equals(passwd)){
 				System.out.println("用户名"+"\t"+name+"\n"+"密码"+"\t"+passwd);
 				System.out.println("身份验证正确，登陆成功");
 		  		break;	  
