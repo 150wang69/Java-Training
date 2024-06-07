@@ -1,59 +1,37 @@
-
 import java.util.Scanner;
-public class Break
-{
-
+public class Break{	
 	public static void main(String[]args){
-	
-	//Á·Ï°1
-	//1-100ÒÔÄÚµÄÊıÇóºÍ£¬Çó³ö µ±ºÍµÚÒ»´Î´óÓÚ20µÄµ±Ç°Êı£¨foe+break£©
-	
+	//ç»ƒä¹ 1
+	//1-100ä»¥å†…çš„æ•°æ±‚å’Œï¼Œæ±‚å‡º å½“å’Œç¬¬ä¸€æ¬¡å¤§äº20çš„å½“å‰æ•°ï¼ˆfoe+breakï¼‰	
 		int sum = 0;
-	for (int i =1;i<=100 ;i++ )
-	{
-		sum += i;
-		if (sum>20)
-		{
-			System.out.println("µ±Ç°i="+i);
-		   break;
+		for (int i =1;i<=100 ;i++ ){
+			sum += i;
+			if (sum>20){
+				System.out.println("å½“å‰i="+i);
+		   		break;
+			}
 		}
-			
-	}
-	
-	//Á·Ï°2
-	//ÊµÏÖµÇÂ½ÑéÖ¤£¬ÓĞÈı´Î»ú»á£¬Èç¹ûÓÃ»§ÃûÎª¡°ÍõÑó¡±£¬ÃÜÂë¡°666¡±£¬ÔòÌáÊ¾µÇÂ½³É¹¦¡£·ñÔòÌáÊ¾»¹ÓĞ¼¸´Î»ú»á£¬ÇëÊ¹ÓÃfor+breakÍê³É¡£
-     Scanner wy = new Scanner(System.in);
-	 String name ="";
-	 String passwd = "";
-	 int chance =3;//µÇÂ¼Ò»´Î¾Í¼õÉÙÒ»´Î¡£
-	
-                  for (int i =1; i<=3;i++ )
-              {
-	System.out.println("ÇëÊäÈëÓÃ»§Ãû");
-		name = wy.next();
-		System.out.println("ÇëÊäÈëÃÜÂë");
-       passwd = wy.next();
-  //±È½ÏÊäÈëµÄÃû×ÖºÍÃÜÂëÊÇ·ñÕıÈ·¡£
-  //²¹³äËµÃ÷£º×Ö·û´®±È½ÏµÄ·½·¨£ºStringÀàÀïÓĞequal·½·¨¡£
- 
-	  if ("ÍõÑó".equals(name) && "666".equals(passwd))
-  {
-	  System.out.println("ÓÃ»§Ãû"+"\t"+name+"\n"+"ÃÜÂë"+"\t"+passwd);
-	  System.out.println("Éí·İÑéÖ¤ÕıÈ·£¬µÇÂ½³É¹¦");
-	  break;
-     
-	  
-  }else{
-	  chance--;
-
-  System.out.println("»¹Ê£ÏÂ"+chance+"´Î»ú»á");
-
-  }
-  
-}
-     		
-	
-	
-	
+	//ç»ƒä¹ 2
+	//å®ç°ç™»é™†éªŒè¯ï¼Œæœ‰ä¸‰æ¬¡æœºä¼šï¼Œå¦‚æœç”¨æˆ·åä¸ºâ€œç‹æ´‹â€ï¼Œå¯†ç â€œ666â€ï¼Œåˆ™æç¤ºç™»é™†æˆåŠŸã€‚å¦åˆ™æç¤ºè¿˜æœ‰å‡ æ¬¡æœºä¼šï¼Œè¯·ä½¿ç”¨for+breakå®Œæˆã€‚
+	    	Scanner wy = new Scanner(System.in);
+		String name ="";
+		String passwd = "";
+		int chance =3;//ç™»å½•ä¸€æ¬¡å°±å‡å°‘ä¸€æ¬¡ã€‚
+		for (int i =1; i<=3;i++ ){
+			System.out.println("è¯·è¾“å…¥ç”¨æˆ·å");
+			name = wy.next();
+			System.out.println("è¯·è¾“å…¥å¯†ç ");
+	       		passwd = wy.next();
+			//æ¯”è¾ƒè¾“å…¥çš„åå­—å’Œå¯†ç æ˜¯å¦æ­£ç¡®ã€‚
+			//è¡¥å……è¯´æ˜ï¼šå­—ç¬¦ä¸²æ¯”è¾ƒçš„æ–¹æ³•ï¼šStringç±»é‡Œæœ‰equalæ–¹æ³•ã€‚
+	 		if ("ç‹æ´‹".equals(name) && "666".equals(passwd)){
+				System.out.println("ç”¨æˆ·å"+"\t"+name+"\n"+"å¯†ç "+"\t"+passwd);
+				System.out.println("èº«ä»½éªŒè¯æ­£ç¡®ï¼Œç™»é™†æˆåŠŸ");
+		  		break;	  
+	  		}else{ 
+				chance--;
+				System.out.println("è¿˜å‰©ä¸‹"+chance+"æ¬¡æœºä¼š");
+			}
+	  	}	
 	}
 }
